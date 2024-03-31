@@ -34,8 +34,8 @@ public class Player : MonoBehaviour
 
 
         // Rotate the camera based on mouse input
-        float mouseX = Input.GetAxis("Mouse X") * cameraRotationSpeed * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * cameraRotationSpeed * Time.deltaTime;
+        float mouseX = Input.GetAxis("Mouse X") * cameraRotationSpeed;
+        float mouseY = Input.GetAxis("Mouse Y") * cameraRotationSpeed;
 
         // Rotate the camera horizontally around the player (yaw)
         mainCameraTransform.RotateAround(transform.position, Vector3.up, mouseX);
